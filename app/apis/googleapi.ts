@@ -1,0 +1,10 @@
+import api from "../apis/authApi";
+
+export const googleAuth = (payload: {
+  accessToken?: string;
+  access_token?: string;
+  token?: string;
+}) =>
+  api.post("/google", payload);
+
+export const fetchCurrentUser = () => api.get("/current");

@@ -4,8 +4,9 @@ import React, { useEffect, useState } from "react";
 import { useAppSelector, useAppDispatch } from "../redux/hooks";
 import { logout } from "../redux/authSlice";
 import { useRouter } from "next/navigation";
-import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
+import NavbarPage from "../navbar/page";
+import Footer from "../footer/page";
 
 const ProfilePage = () => {
   const { user } = useAppSelector((state) => state.auth);
@@ -24,7 +25,7 @@ const ProfilePage = () => {
 
   return (
     <div className="min-h-screen bg-[#fcfdfd] font-sans selection:bg-emerald-100 selection:text-emerald-900">
-      <Navbar />
+      <NavbarPage />
       
       <main className="max-w-7xl mx-auto py-12 px-6">
         <div className="flex flex-col lg:flex-row gap-8">
@@ -127,6 +128,7 @@ const ProfilePage = () => {
           
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

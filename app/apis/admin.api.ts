@@ -8,3 +8,7 @@ export const getSellerRequests = () => {
 export const approveSeller = (id: string) => {
   return api.put(`/admin/approve/${id}`);
 };
+
+export const rejectSeller = (id: string) => {
+  return api.put(`/admin/reject/${id}`);
+};

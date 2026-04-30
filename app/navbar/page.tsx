@@ -150,6 +150,8 @@ const NavbarPage = () => {
                 <Link href="/about" className="text-xl font-bold text-slate-600">About</Link>
                 <Link href="/help" className="text-xl font-bold text-slate-600">Help</Link>
                 <Link href="/partner" className="text-xl font-bold text-slate-600">Partners</Link>
+                                <Link href="/profile" className="text-xl font-bold text-slate-600">Profile</Link>
+
                 <div className="pt-6 border-t border-slate-100 flex flex-col gap-4">
                   <button className="w-full py-4 bg-[#eaf4f0] text-[#0a4d33] font-bold rounded-xl text-lg">Upload Rx</button>
                   {isMounted && user && user._id ? (
